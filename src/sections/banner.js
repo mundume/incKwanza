@@ -4,6 +4,7 @@ import { Container, Box, Heading, Text, Image, Button } from 'theme-ui';
 import BannerImg from 'assets/banner.png';
 import ShapeLeft from 'assets/shape-left.png';
 import ShapeRight from 'assets/shape-right.png';
+import SectionHeader from 'components/section-header';
 
 export default function Banner() {
   return (
@@ -18,7 +19,10 @@ export default function Banner() {
             We provide The Best Service From Our Professionals!<br/> If you've been looking for Professionals to take your Business Idea to the next level Then you're at the <b>Right Place!</b>
           
           </Text>
-          <Button variant="primary"> Explore</Button>
+          
+          <Button onClick={() => window.location='#feature'}variant="primary" > Explore</Button>
+        
+          
 
         </Box>
         <Box sx={styles.banner.imageBox}>
@@ -34,7 +38,7 @@ export default function Banner() {
 const styles = {
   banner: {
     pt: ['140px', '145px', '155px', '170px', null, null, '180px', '215px'],
-    pb: [2, null, 0, null, 2, 0, null, 5],
+    pb: [2, null, 0, null, 2, 0, null, 150],
     position: 'relative',
     zIndex: 2,
     '&::before': {

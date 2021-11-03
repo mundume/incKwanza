@@ -29,9 +29,10 @@ export default function Header({ className }) {
         ))}
 
       </Flex>
-      <Button className="donate__btn" variant="secondary" arial-label="Get Started">
+      
+      <Button onClick={()=> window.location= '#pricing'} className="donate__btn" variant="secondary"  arial-label="Get Started"
+      >
         Get Started
-
       </Button>
       <MobileDrawer/>
 

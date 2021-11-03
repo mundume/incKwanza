@@ -17,7 +17,7 @@ const data = [
     id: 1,
     imgSrc: Member1,
     altText: 'Saimon Harmer',
-    title: 'Saimon Harmer',
+    title: 'Peter Sande',
     designation: 'CEO and Founder',
     socialProfile: [
       {
@@ -44,7 +44,7 @@ const data = [
     id: 2,
     imgSrc: Member2,
     altText: 'Aaron Nunez',
-    title: 'Aaron Nunez',
+    title: 'Ali Daddy',
     designation: 'Founder',
     socialProfile: [
       {
@@ -71,8 +71,8 @@ const data = [
     id: 3,
     imgSrc: Member3,
     altText: 'Aaron Nunez',
-    title: 'Aaron Nunez',
-    designation: 'Web Designer',
+    title: 'Asma Asma',
+    designation: 'Project Manager',
     socialProfile: [
       {
         id: 1,
@@ -97,9 +97,9 @@ const data = [
   {
     id: 4,
     imgSrc: Member4,
-    altText: 'Lina Jutila',
-    title: 'Lina Jutila',
-    designation: 'Web Developer',
+    altText: 'Reuben Jefwa',
+    title: 'Reuben Jefwa',
+    designation: 'Senoir Developer',
     socialProfile: [
       {
         id: 1,
@@ -110,7 +110,7 @@ const data = [
       {
         id: 2,
         name: 'twitter',
-        path: '#',
+        path: 'https://twitter.com/home',
         icon: <FaTwitter />,
       },
       {
@@ -124,9 +124,9 @@ const data = [
   {
     id: 5,
     imgSrc: Member5,
-    altText: 'Saimon Harmer',
-    title: 'Saimon Harmer',
-    designation: 'CEO and Founder',
+    altText: 'Nzai Kilonzo',
+    title: 'Nzai Kilonzo',
+    designation: 'Lead Developer',
     socialProfile: [
       {
         id: 1,
@@ -148,33 +148,7 @@ const data = [
       },
     ],
   },
-  {
-    id: 6,
-    imgSrc: Member6,
-    altText: 'Aaron Nunez',
-    title: 'Aaron Nunez',
-    designation: 'Web Designer',
-    socialProfile: [
-      {
-        id: 1,
-        name: 'facebook',
-        path: '#',
-        icon: <FaFacebookF />,
-      },
-      {
-        id: 2,
-        name: 'twitter',
-        path: '#',
-        icon: <FaTwitter />,
-      },
-      {
-        id: 3,
-        name: 'instagram',
-        path: '#',
-        icon: <FaInstagram />,
-      },
-    ],
-  },
+  
 ];
 
 export default function TeamSection() {

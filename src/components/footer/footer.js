@@ -2,11 +2,39 @@
 import { jsx, Box, Container, Image, Text } from 'theme-ui';
 import { Link } from 'components/link';
 import data from './footer.data';
-import FooterLogo from 'assets/logo.svg';
+import FooterLogo from 'assets/kwanza.jpg';
 
 export default function Footer() {
   return (
-    <h1>Footer</h1>
+    <footer sx={styles.footer}>
+      <Container>
+        <Box sx={styles.footer.footerBottomArea}>
+          <Link path="/">
+            <Image src={FooterLogo} alt="logo"/>
+          </Link>
+          <Box sx={styles.footer.menus}>
+            <nav>
+              {data.menuItem.map((item, i) =>(
+                <Link
+                 path={item.path}
+                 key={i}
+                 label={item.label}
+                 sx={styles.footer.link}
+                >
+                 </Link>
+
+              ))}
+            </nav>
+
+          </Box>
+          <Text sx={styles.footer.copyright}>
+          © {new Date().getFullYear()} Kwanza Inc
+
+          </Text>
+        </Box>
+      </Container>
+
+    </footer>
   );
 }
 

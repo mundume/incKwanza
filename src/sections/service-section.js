@@ -9,18 +9,18 @@ import ModalVideo from 'react-modal-video';
 import ServiceThumb from 'assets/service-thumb.png';
 import shapePattern from 'assets/shape-pattern1.png';
 
-import Smart from 'assets/services/smart.svg';
-import Secure from 'assets/services/secure.svg';
+import Smart from 'assets/key-feature/kilosh.png';
+import Secure from 'assets/key-feature/kilonzo.png';
 
 const data = {
-  subTitle: 'our services',
-  title: 'Business Goals Achieved with Design',
+  subTitle: 'Reasons for choosing us',
+  title: '',
   features: [
     {
       id: 1,
       imgSrc: Smart,
       altText: 'Smart Features',
-      title: 'Smart Features',
+      title: 'Rapid App and Website Development',
       text:
         'Get your blood tests delivered at let home collect sample from the victory of the managements. your blood tests.',
     },
@@ -28,7 +28,7 @@ const data = {
       id: 2,
       imgSrc: Secure,
       altText: 'Secure Contents',
-      title: 'Secure Contents',
+      title: 'Big Ideas, creative personells & new technologies.',
       text:
         'Get your blood tests delivered at let home collect sample from the victory of the managements. your blood tests.',
     },

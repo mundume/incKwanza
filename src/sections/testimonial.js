@@ -9,6 +9,7 @@ import Avatar1 from 'assets/testimonial/avatar1.png';
 import Avatar2 from 'assets/testimonial/avatar2.png';
 import Avatar3 from 'assets/testimonial/avatar3.png';
 import Avatar4 from 'assets/testimonial/avatar4.png';
+import { Card } from '@theme-ui/components';
 
 const data = [
   {
@@ -101,7 +102,40 @@ const carouselParams = {
 
 export default function TestimonialCard() {
   return (
-   <h1>Testimonial Card</h1>
+   <section id="testimonial" sx={{variant: 'section.testimonial'}}>
+     <Container css={{textAlign: 'center'}}>
+       <SectionHeader
+        slogan="Testimonials"
+        title="Our Happy clients Satisfied"
+       />
+
+     </Container>
+     <Box sx={styles.carouselWrapper}>
+       <Carousel{...carouselParams}>
+       {data.map((item) =>(
+         <Box sx={styles.reviewCard} key={item.sliderClass}>
+           <Rating rating={item.review} />
+           <Heading as="h3" sx={styles.title}>
+             {item.title}
+           </Heading>
+           <Text sx={styles.description}>{item.description}</Text>
+           <div className="card-footer">
+             <div className="reviewer-info">
+               <Heading as="h4" sx={styles.heading}>
+                 {item.name}
+
+               </Heading>
+              
+             </div>
+           </div>
+         </Box>
+       ))}
+
+       </Carousel>
+
+     </Box>
+
+   </section>
   );
 }
 

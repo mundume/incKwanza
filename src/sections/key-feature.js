@@ -3,10 +3,10 @@ import { jsx } from 'theme-ui';
 import { Container, Grid } from 'theme-ui';
 import SectionHeader from '../components/section-header';
 import FeatureCardColumn from 'components/feature-card-column.js';
-import Performance from 'assets/key-feature/performance.svg';
-import Partnership from 'assets/key-feature/partnership.svg';
-import Subscription from 'assets/key-feature/subscription.svg';
-import Support from 'assets/key-feature/support.svg';
+import Performance from 'assets/key-feature/kilosh.png';
+import Partnership from 'assets/key-feature/nzai.png';
+import Subscription from 'assets/key-feature/mundume.png';
+import Support from 'assets/key-feature/kilonzo.png';
 import Feature from './feature';
 import FeatureCard from 'components/feature-card';
 
@@ -17,13 +17,13 @@ const data = [
     altText: 'Fast Performance',
     title: 'Fast Performance',
     text:
-      'Get your blood tests delivered at home collect a sample from the your blood tests.',
+      'Get your  tests delivered at home collect a sample from the your blood tests.',
   },
   {
     id: 2,
     imgSrc: Partnership,
     altText: 'Partnership deal',
-    title: 'Partnership deal',
+    title: 'Web Design and Development',
     text:
       'Get your blood tests delivered at home collect a sample from the your blood tests.',
   },
@@ -31,7 +31,7 @@ const data = [
     id: 3,
     imgSrc: Subscription,
     altText: 'Pro Subscription',
-    title: 'Pro Subscription',
+    title: 'Cross Platform Mobile App Development',
     text:
       'Get your blood tests delivered at home collect a sample from the your blood tests.',
   },
@@ -52,7 +52,6 @@ export default function KeyFeature() {
        <SectionHeader
          slogan="whats the function"
          title="Meet the feature of our product"
-
        />
        <Grid sx={styles.grid}>
          {data.map((item)=>(
